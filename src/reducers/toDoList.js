@@ -1,5 +1,4 @@
-
-const initialState = JSON.parse(localStorage.getItem('myTodosList'));
+const initialState = JSON.parse(localStorage.getItem('myTodosList')) || [];
 
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -9,6 +8,7 @@ export default (state = initialState, action) => {
         {
           completed: false,
           ...action.payload,
+          id: state.length === 0 ? 0 : state[state.length - 1].id + 1,
         },
       ];
 

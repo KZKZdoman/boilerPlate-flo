@@ -1,10 +1,7 @@
-let toDoId = 0;
-
 export const addTodo = message => (dispatch) => {
   dispatch({
     type: 'ADD_TODO',
     payload: {
-      id: toDoId += 1,
       message,
     },
   });
