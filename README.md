@@ -71,6 +71,8 @@ When everything was done i started adding a simple save system using the localst
 - Clean code (the components)
 - I should have used a boilerplate with redux and better file structure, i lost too much time
 - Rename the functions/Vars
+- Make a better errors handling (especially for the storage)
+- Make possible to delete the storage / todos
 
 
 
